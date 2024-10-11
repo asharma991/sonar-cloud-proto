@@ -1,7 +1,7 @@
 import express from "express";
 import ViteExpress from "vite-express";
 
-var app = express();
+const app = express();
 
 app.get("/hello", (req, res) => {
   res.send("Hello Vite!");
