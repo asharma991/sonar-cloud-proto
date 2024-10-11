@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v1
         with:
           fetch-depth: 0
+      - name: Install Dependencies
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
         run: bun
       - name: SonarCloud Scan
